@@ -1,5 +1,4 @@
 #include "counter.h"
-#include <pthread.h>
 
 //contention-aware counter
 counter cnt;
@@ -7,7 +6,7 @@ counter cnt;
 atomic_int number;
 
 static const size_t INC = 3;
-static const size_t GET = 2;
+static const size_t GET = 1;
 
 /*
  * The test creates INC threads performing inc on the global counter
